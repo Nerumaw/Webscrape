@@ -25,5 +25,8 @@ scores = soup.find_all('div', {'data-mlb-test': 'scoreContainer'}, limit=2)
 #    print(score.text)
 
 #print results neatly -> [:3] to avoid LADLAD
-print(f"Result of the most recent dodgers game \n{teams[0].text[:3]}: {scores[0].text}\n{teams[1].text[:3]}: {scores[1].text}")
+if len(scores) == 0:  
+    print(f"Upcoming game: \n{teams[0].text[:3]}\n{teams[1].text[:3]}")
+else:
+    print(f"Result of the most recent dodgers game \n{teams[0].text[:3]}: {scores[0].text}\n{teams[1].text[:3]}: {scores[1].text}")
 print(f"\nTeam headlines: \n>{headline[0].text}\n\n>{headline[1].text}\n\n>{headline[2].text}")

@@ -4,4 +4,4 @@ Es wird entweder das kommende Spiel oder das Ergebnis des letzen dargestellt.
 
 Zudem auch noch die 3 wichtigsten Headlines.
 
-Indem Result.png befindet sich die Konsolenausgabe
+Indem Result.png befindet sich die Konsolenausgabe. Die 200 ist zur visuellen Bestätigung, dass die Verbindung steht.
